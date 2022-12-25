@@ -1,0 +1,194 @@
+/* Estilos para los enlaces del menú */
+ul#menu {
+    padding-left: 0px;
+    list-style-type: none;
+}
+
+ul#menu li {
+    display: inline-block;
+    background-color: burlywood;
+}
+
+ul#menu li a {
+    display: block;
+    padding: 0.5em;
+    font-weight: bold;
+    text-decoration: none;
+    color: white;
+}
+
+/* Estilos para los encabezados */
+h2,
+h3,
+h4 {
+    background-color: cornflowerblue;
+    color: white;
+    border-bottom: 4px solid coral;
+}
+
+/* Estilos para la tabla */
+caption {
+    font-size: 1.5em;
+    color: darkcyan;
+}
+
+
+table.Table12 {
+    border: 1px solid green;
+
+    margin: 0 auto;
+    /*Centrar la tabla*/
+}
+
+table.Table12 td,
+table.Table12 th {
+    padding: 1em;
+    border: 1px solid burlywood;
+}
+
+li {
+    line-height: 1.5;
+}
+
+tfoot {
+    text-align: center;
+}
+
+/* Estilos para resaltar palabras */
+
+.favorito {
+    color: white;
+    font-weight: bold;
+    padding: 0.2em;
+    border: 1px solid blue;
+    background-color: cornflowerblue;
+    border-radius: 10px;
+}
+
+.favorito:hover {
+    cursor: pointer;
+    font-size: 1.02rem;
+}
+
+/* Estilos formulario*/
+form#formulario {
+    width: 335px;
+    padding: 20px;
+    margin: auto;
+    border: 2px solid red;
+}
+
+.txtBar {
+    width: 100%;
+    margin: 8px 0;
+}
+
+form input[type="submit"] {
+    width: 25%;
+    padding: 8px 16px;
+    margin-top: 32px;
+    border: 1px solid #000;
+    color: #fff;
+    background-color: rgb(44, 107, 138);
+    margin-left: 50px;
+}
+
+form input[type="reset"] {
+    width: 25%;
+    padding: 8px 16px;
+    margin-top: 32px;
+    border: 1px solid #000;
+    color: #fff;
+    background-color: rgb(202, 50, 50);
+    margin-left: 50px;
+}
+
+form input[type="submit"]:hover {
+    cursor: pointer;
+}
+
+/*Menu*/
+
+.menu {
+    background-color: #e9e9e9;
+    height: 50px;
+    width: 50%;
+    margin: auto;
+}
+
+.menu a {
+    float: left;
+    color: black;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.menu a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+.menu a#Home {
+    background-color: #2196F3;
+    color: white;
+}
+
+.menu .menuSearch {
+    float: right;
+}
+
+.menu input[type=text] {
+    padding: 6px;
+    margin-top: 8px;
+    font-size: 17px;
+    border: none;
+}
+
+.menu .menuSearch button {
+    float: right;
+    padding: 6px;
+    margin-top: 8px;
+    margin-right: 16px;
+    background: #ddd;
+    font-size: 17px;
+    border: none;
+    cursor: pointer;
+}
+
+/*Ultima tabla*/
+.Table3{
+    margin: 0 auto;
+    width: 60%;
+    border-collapse: collapse;                                                                             
+}
+
+.Table3 td,
+.Table3 th{
+    padding: 1em;
+    border-color: none;
+    text-align: center;
+}
+
+table.Table3 tr{
+    border-bottom: 2px solid gray;
+}
+
+.Table3 tbody tr:nth-child(1){
+    background-color: #FFFFFF;
+}
+.Table3 tbody tr:nth-child(2){
+    background-color:#DFF0D8;
+}
+.Table3 tbody tr:nth-child(3){
+    background-color: #FCF8E3;
+}
+.Table3 tbody tr:nth-child(4){
+    background-color: #DFF0D8;
+}
+.Table3 tbody tr:nth-child(5){
+    background-color: #FFFFFF;
+}
+.Table3 tbody tr:nth-child(6){
+    background-color: #F5F5F5;
+}

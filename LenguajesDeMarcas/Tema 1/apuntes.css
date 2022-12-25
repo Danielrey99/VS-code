@@ -1,0 +1,28 @@
+/* clase */
+.resaltado2 {
+    font-weight: 300;
+    color: cornflowerblue;
+    font-size: 3rem;
+}
+/* id */
+#tabla{
+    border: 1ch solid black;
+}
+/*tabla*/
+table ,td,th{
+    font-size:1.2rem;
+    text-align:center;
+    border:2px solid cadetblue;
+    border-collapse: collapse;
+}
+th,td{
+    padding:0.5rem;
+}
+caption{
+    font-size:1.3rem;
+}
+.resaltado{
+    font-weight: bold;
+    color:orangered;
+    font-size:1.7rem;
+}

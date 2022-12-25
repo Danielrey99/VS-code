@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Tarea 1. Ejercicio 2.</title>
+</head>
+
+<body>
+
+    <!--boton empezar juego-->
+    <button onclick="dados()">Tirar los dados</button>
+    <br>
+    <p id="operaciones"></p>
+
+    <script>
+
+        /*El ejercicio 1 y dos los hice mostarndolos por el navegador
+        *pero me di cuenta que lo mandaba mostrar por consola
+        *asi que le añadi la salida por conosola y les deje la salida por navegador
+        */
+    
+    function dados(){
+        //var numDados=parseInt(prompt("Introduzca el numero de dados"));
+        var numdados=parseInt(prompt("Inroduce un numero de dados"));
+
+        //Obtenemos el parrafo por id añadimos texto
+        var texto=document.getElementById('operaciones');
+        texto.innerHTML +='Dados Iguales<br>';
+        texto.innerHTML +='Numero de dados: '+numdados+' <br>';
+        texto.innerHTML +='Dados: ';
+        //mostramos por consola
+        console.log('Dados Iguales');
+        console.log('Numero de dados: '+numdados);
+
+        //Iniciamos la variable resultado y el array que guardará los dados
+        var resultado="El jugador ha perdido";
+        var arrayDados=[];
+        
+        //Comprobamos si se puede jugar
+        if(numdados!=1){
+
+            //tiramos los dados, imprimimos el resultado y guardamos los valores en el array
+            var textoconsole='';//para mostrarlo por consola sin saltos de linea
+            for(let i=1;i<=numdados;i++){
+            var dado=Math.floor(Math.random()*(6 - 1 +1)+ 1);
+            texto.innerHTML +=dado+' ';
+            textoconsole +=dado+' ';//para mostrarlo por consola sin saltos de linea
+            arrayDados.push(dado);
+            }
+            console.log('Dados: '+textoconsole);//mostramos por consola
+
+            //Ordenamos el array para comprobar si hay numeros repetidos
+            arrayDados.sort();
+            for(let i=0;i<arrayDados.length;i++){
+                if(arrayDados[i+1]==arrayDados[i]){
+                    resultado="El jugador ha ganado";
+                }
+            }
+
+        }else{
+            resultado='¡Imposible!';
+        }
+
+        //Escribimos el resultado
+        texto.innerHTML +="<br>"+resultado+"<br><br>";
+        //resultado por consola
+        console.log(resultado);
+        
+    }
+
+    </script>
+</body>
+
+</html>

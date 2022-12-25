@@ -1,0 +1,31 @@
+1)a,p{}         
+2)div div{}      
+3)div .externo{}  
+4)div>a{}         
+5)div>a.externo{}  
+6)div.cuerpo>a.externo{}              
+7)button#cancelButton.secundario{}    
+8)#main>div{}                     
+9)a.externo,a.primario{}          
+10)a:visited{}
+11)*{}
+12)a[target="_blank"]{}           
+13)button+p{}                  
+14).primary~button{}           
+15)div :focus{}         
+16)button:not(.primary){} 
+17)a:focused.externo{}    
+18)p>div:nth-child(3){}     
+19)nav>*:not(:first-child){}    
+20)nav>a:nth-child(4n+2){}      
+21)ul>*:nth-child(n+4){}        
+22).listing>p:last-child{}      
+23)* .big-box{}              
+24)p::first-line{}           
+25)a+img{}                   
+26)article>p:first-child::first-line{}   
+27)div#main.chapter{}      
+28)#main li{}           
+29)ul:nth-child(3){}     
+30)nav>a:visited{}
+31)a:not(:visited):hoover:not(:focus){}

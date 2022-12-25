@@ -1,0 +1,195 @@
+*{
+    font-family:Arial, Helvetica, sans-serif;
+}
+header a{
+    text-decoration: none;
+    color:#2d2d2d;
+    cursor: pointer;
+}
+header{
+    background-color: rgb(254, 232, 222);
+}
+header ul li:last-child{
+    background-color: #e67e22;
+    border-radius: 5px;
+}
+header ul li{
+    margin-left: 50px;
+}
+header button img{
+    width: 50px;
+    height: 50px;
+}
+.btn-menu {
+    border: none;
+    background: none;
+    cursor: pointer;
+    display: block;
+}
+.section-1{
+    background-color: rgb(254, 232, 222);
+}
+.section-1 a:first-child{
+    background-color: #e67e22;
+    text-decoration: none;
+    color: white;
+    border-radius: 5px;
+}
+.section-1 a:last-child{
+    background-color: white;
+    text-decoration: none;
+    color: black;
+    border-radius: 5px;
+}
+.naranja{
+    color:#e67e22;
+}
+.tamanho{
+    width: 32px;
+    height: 32px;
+}
+.tamanho:nth-child(2){
+    z-index: 2;
+}
+.tamanho:nth-child(3){
+    z-index: 3;
+}
+.tamanho:nth-child(4){
+    z-index: 4;
+}
+.tamanho:nth-child(5){
+    z-index: 5;
+}
+.tamanho:nth-child(6){
+    z-index: 6;
+}
+.Customers img{
+    margin-right: -0.8rem;
+    border: 2px solid rgb(254, 232, 222);
+}
+.marcas{
+    filter: grayscale(1);
+    opacity: 50%;
+}
+@media only screen and (max-width: 625px) {
+    .marcas img{
+        width: 40px;
+        height: 12px;
+    }
+}
+@media only screen and (max-width: 992px) {
+    .marcas img{
+        width: 90px;
+        height: 20px;
+    }
+}
+.mobileback{
+    background-color: lightcoral;
+    width: 250px;
+    height: 250px;
+    z-index: -1;
+}
+.mobileback2{
+    background-color: rgb(254, 232, 222);
+    width: 300px;
+    height: 300px;
+    z-index: -2;
+}
+.check li{
+    list-style: url(imagenes/check.svg);
+}
+.rounded-top{
+    overflow: hidden;
+}
+.backVerde{
+    background-color: lightgreen;
+    width: 70px;
+    font-size:0.5em;
+    margin: 5px;
+}
+.backAzul{
+    background-color: paleturquoise;
+    width: 40px;
+    font-size:0.5em;
+    margin: 5px;
+}
+.backAmarillo{
+    background-color: #f1e564;
+    width: 40px;
+    font-size:0.5em;
+    margin: 5px;
+}
+.resize{
+    font-size: 0.8em;
+}
+.section-5{
+    background-color: rgb(254, 232, 222);
+}
+.btnNaranja{
+    background-color:#e67e22;
+    color: white;
+    text-decoration: none;
+}
+.check2 li{
+    list-style: url(imagenes/check.svg);
+}
+.colorFondo{
+    background-color: rgb(254, 232, 222);
+}
+.hide ul li:last-child{
+    list-style: url(imagenes/x.svg);
+}
+.formBack{
+    background-color: #e67e22;
+    overflow: hidden;
+}
+form button{
+    background-color: rgb(84, 33, 33);
+    color: white;
+}
+.divimg{
+    background-image: url(imagenes/eating.jpg);
+    background-size: cover;
+    background-position: center;
+    width:600px; 
+    height:750px;
+}
+@media only screen and (max-width: 768px) {
+.divimg{
+    max-height: 400px;
+}
+}
+.navlink:hover{
+    color:#e67e22;
+}
+.navlink:active,
+.link2:active{
+    border: 4px solid #fcba81;
+}
+.menu{
+    position: relative;
+    top: 0;
+    transition: top ease 0.5s;
+}
+.menu:hover{
+    top: -10px;
+}
+.zoom{
+    overflow: hidden;
+}
+.zoom img{
+    transition: 0.5s all ease-in-out;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+.zoom img:hover{
+    transform: scale(1.2);
+}
+.txtblanco:hover{
+color: white;
+}
+form button:hover{
+    background-color: white;
+    color: black;
+}

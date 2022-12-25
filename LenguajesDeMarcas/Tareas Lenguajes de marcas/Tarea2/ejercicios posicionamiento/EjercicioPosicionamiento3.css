@@ -1,0 +1,46 @@
+.topnav{
+    background-color: #E9E9E9;
+    overflow: hidden;
+}
+ul{
+    margin:0px;
+    padding-left: 0px;
+    list-style-type: none;
+    float: left;
+}
+li{
+    float: left;
+    padding: 12px;
+
+}
+li.active{
+    background-color: #2196F3;
+}
+li.active a{
+    color:white;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+.login-container{
+    float:right;
+}
+
+.login-container{
+    padding:6px;
+}
+
+.login-container input[type="text"]{
+    padding: 8px;
+    border: none;
+}
+
+button{
+    background: rgb(85, 82, 82);
+    font-size: 17px;
+    border: none;
+    cursor: pointer;
+    padding: 5px;
+    color: white;
+}

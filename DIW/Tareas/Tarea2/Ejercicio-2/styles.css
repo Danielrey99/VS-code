@@ -1,0 +1,60 @@
+#rojo{
+    background-color: red;
+    padding-left: 200px;
+    padding-right: 200px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    position: absolute;
+    top: 150px;
+    left: 250px;
+}
+#verdeDerecha{
+    background-color:green;
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-top: 50px;
+    padding-bottom: 250px;
+    position: absolute;
+    top: 150px;
+    left: 650px;
+}
+#verdeIzquierda{
+    background-color:green;
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-top: 50px;
+    padding-bottom: 250px;
+    position: absolute;
+    top: 450px;
+    left: 250px;
+}
+#amarilloDerecha{
+    background-color: yellow;
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-top: 50px;
+    padding-bottom: 250px;
+    position: absolute;
+    top: 450px;
+    left: 650px;
+}
+#amarilloIzquierda{
+    background-color: yellow;
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-top: 50px;
+    padding-bottom: 250px;
+    position: absolute;
+    top: 750px;
+    left: 250px;
+}
+#azul{
+    background-color: blue;
+    padding-left: 200px;
+    padding-right: 200px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    position: absolute;
+    top: 750px;
+    left: 650px;
+}

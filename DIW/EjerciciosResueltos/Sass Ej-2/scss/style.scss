@@ -1,0 +1,42 @@
+//variables
+$small: 576px;
+$medium: 768px;
+
+//reset universal
+* {
+    margin: o;
+    padding: 0;
+    color: inherit;
+}
+
+//mixin(funcion)
+@mixin box-color($color, $size: 14px) {
+    //size es un valor fijo
+    color: $color;
+    background-color: lighten(invert($color), $amount: 20%);
+
+    font: {
+        //font-size: $size; font-family: verdana;
+        size: $size;
+        family: Verdana sans-serif;
+    }
+
+    margin: $size;
+    padding: $size;
+    line-height: 1.5*$size;
+    border: 5px solid $color;
+}
+
+//mediaquerys
+#container {
+    //llamamos al mixin
+    @include box-color(darkred);
+
+    @media screen and (max-width: $small) {
+        @include box-color(darkblue);
+    }
+
+    @media screen and (min-width: $medium) {
+        @include box-color(darkgreen, 20px);
+    }
+}

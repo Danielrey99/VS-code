@@ -1,0 +1,10 @@
+.grid-cont{
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(auto-fit,minmax(150px,1fr));
+}
+.grid-cont div{
+    border: 3px solid lightcoral;
+    border-radius: 5px;
+    padding: 10px;
+}

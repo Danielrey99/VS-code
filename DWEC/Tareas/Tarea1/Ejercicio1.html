@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Tarea 1. Ejercicio 1.</title>
+</head>
+
+<body>
+
+    <!--boton empezar juego-->
+    <button onclick="quince()">JUEGO DEL QUINCE</button>
+    <br>
+    <p id="operaciones"></p>
+
+    <script>
+        function quince(){
+            //realizamos las tiradas de los 2 jugadores
+            /*Math. randon da numeros entre 0 y 1 con decimales.Se multiplica x10 para que sea entre 9 y 0, 
+            se le suma 1 para que sea entre 1 y 10. Y se redondea para quitarle los decimales
+            */
+            var gloria1=Math.round((Math.random()*10)+1);
+            var gloria2=Math.round((Math.random()*10)+1);
+            var gloria3=Math.round((Math.random()*10)+1);
+            var hector1=Math.round((Math.random()*10)+1);
+            var hector2=Math.round((Math.random()*10)+1);
+            var hector3=Math.round((Math.random()*10)+1);
+
+            //Sumamos las tiradas para ver los resultados
+            var gloriaSuma=gloria1+gloria2+gloria3;
+            var hectorSuma=hector1+hector2+hector3;
+
+            //Comprobamos si empatan o se pasan ambos
+            var resultado;
+           if(gloriaSuma>15 && hectorSuma>15){
+            resultado="No ha ganado nadie.";
+           }else if(gloriaSuma==hectorSuma){
+            resultado="Han empatado.";
+           }
+           //Comprobamos si solo se pasa 1
+           if(gloriaSuma>15 && hectorSuma<=15){
+            resultado="Ha ganado Hector";
+           }
+           if(hectorSuma>15 && gloriaSuma<=15){
+            resultado="Ha ganado Gloria";
+           }
+           //Comprobamos ganador si ninguno se pasa
+           if(hectorSuma<=15 && gloriaSuma<=15){
+            if(hectorSuma>gloriaSuma){
+                resultado="Ha ganado Hector.";
+            }
+            if(hectorSuma<gloriaSuma){
+                resultado="Ha ganado Gloria.";
+            }
+           }
+
+           //Obtenemos en parrafo por su id y le añadimos los resultados obtenidos
+            var texto=document.getElementById('operaciones');
+            texto.innerHTML += 'JUEGO DEL QUINCE<br>';
+            texto.innerHTML += 'Gloria ha sacado un '+gloria1+", un "+gloria2+" y un "+gloria3+"."+" Suma "+gloriaSuma+"<br>";
+            texto.innerHTML += 'Hector ha sacado un '+hector1+", un "+hector2+" y un "+hector3+"."+" Suma "+hectorSuma+"<br>";
+            texto.innerHTML += resultado+"<br><br>";
+
+            //mostramos por consola
+            console.log('JUEGO DEL QUINCE');
+            console.log('Gloria ha sacado un '+gloria1+", un "+gloria2+" y un "+gloria3+"."+" Suma "+gloriaSuma);
+            console.log('Hector ha sacado un '+hector1+", un "+hector2+" y un "+hector3+"."+" Suma "+hectorSuma);
+            console.log(resultado);
+        }
+    </script>
+</body>
+
+</html>

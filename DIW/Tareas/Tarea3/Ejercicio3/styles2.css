@@ -1,0 +1,27 @@
+.grid-cont{
+    display: grid;
+    grid-template-columns: 50px 50px 50px 50px 50px;
+    justify-content: center;
+    text-align: center;
+    padding-top: 150px;
+}
+.grid-cont div{
+    border: 1px solid black;
+    padding: 15px 15px;
+}
+#item2{
+    grid-row: 2/3;
+    grid-column: 2/3;
+}
+#item3{
+    grid-row: 3/4;
+    grid-column: 3/4;
+}
+#item4{
+    grid-row: 4/5;
+    grid-column: 4/5;
+}
+#item5{
+    grid-row: 5/6;
+    grid-column: 5/6;
+}

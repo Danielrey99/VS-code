@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- escribir html:5 -->
+<!-- Alt+Shift+F para ordenar la pagina -->
+
+<head>
+    <!-- en head van los metadatos -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apuntes</title>
+    <style>
+        .resaltado {
+            font-weight: 300;
+            color: cornflowerblue;
+            font-size: 3rem;
+        }
+    </style>
+    <link rel="stylesheet" type="text/css" href="apuntes.css">
+
+</head>
+
+<body>
+    <!-- div crear secciones o agrupar contenidos-->
+    <div>
+        <a id="Pagina1" href="Pagina1.html">Pagina1</a>
+        <a id="Pagina2" href="Pagina2.html">Pagina2</a>
+        <a id="Pagina3" href="Pagina3.html">Pagina3</a>
+    </div>
+
+    <!-- se pueden hacer saltos de lina con <br> pero mejor usar parrafos-->
+    <!-- id sirve para identificar elementos-->
+    <!-- class se le puede asignar a varios-->
+    <p id="Parrafo1" class="ParrafoVerde">Parrafo 1</p>
+    <p id="Parrafo2" class="ParrafoVerde">Parrafo 2</p>
+
+    <!-- img no tiene etiqueta de cierre-->
+    <!-- src ubicacion de la imagen-->
+    <!-- si esta fuera de la carpeta poniendo ../ bajamos un nivel-->
+    <img src="panda.jpg" width="250" height="250">
+    <img src="imagenes/oso.jpg" width="250" height="250">
+
+    <!-- <a> es un enlace-->
+    <!-- href url del enlace-->
+    <a id="EnlaceGoogle" href="https://www.google.es/">Google</a>
+
+    <!-- h son encabezados-->
+    <!-- em cursiva-->
+    <!-- b negrita-->
+    <h1> <em>Animales</em> </h1>
+    <h2> Osos </h2>
+    <h3>Panda</h3>
+    <h3>Pardo</h3>
+    <h3>Polar</h3>
+
+    <!-- span Permite marcar un texto con el objetivo de poder modificar su estilo a través de CSS-->
+    <h2> <span class="resaltado">Felinos</span> </h2>
+    <h3><span class="resaltado2">gatos</span></h3>
+    <h3>Linces</h3>
+
+    <!-- Texto adicional que el usuario puede decidir ver ono-->
+    <details>
+        <summary>
+            informacion
+        </summary>
+        probando <b>etiquetas</b>
+    </details>
+
+    <!-- cite Define el título de un trabajo.-->
+    <p> Esto es una cita <cite>Harry Potter</cite> </p>
+
+    <!-- Formatea el texto encerrado respetando espacios y saltos de linea.-->
+    <pre>
+        Pre respeta todos
+              los
+              espacios
+    </pre>
+
+    <!-- address informacion de contacto-->
+    <address>
+        <p>Address</p>
+        <p>C/Persona 18, S/N, Vigo, Lavadores</p>
+    </address>
+
+    <!-- alt gr + 3 para #-->
+    <!-- # para enclace al inicio-->
+    <a id="EnlaceMismaPagina" href="#">Enlace al principio</a>
+
+    <!-- listas ul=desordenadas /ol=ordenadas-->
+    <ul>
+        <li>Uno</li>
+        <li>Dos</li>
+        <li>Tres</li>
+    </ul>
+
+    <ol>
+        <li>a</li>
+        <li>b</li>
+        <li>c</li>
+    </ol>
+
+    <!-- listas definiciones-->
+    <dl>
+        <dt>Agora</dt>
+        <dd>Ágora es un término por el que se designaba en la Antigua
+            Grecia a la plaza de las ciudades-estado griegas, donde se
+            solían congregar los ciudadanos. Era un espacio abierto centro
+            del comercio, de la cultura y la política de la vida social
+            de los griegos.</dd>
+    </dl>
+
+    <!-- con figure se puede poner texto y especificar diferentes imágenes en función de ciertas condiciones como el ancho del dispositivo:-->
+    <figure>
+        <img src="panda.jpg" width="250" height="250">
+        <figcaption> Pie de foto. Panda</figcaption>
+    </figure>
+
+    <!-- tablas-->
+    <!-- tr filas/td columnas-->
+    <table id="tabla">
+        <tr>
+            <td>John Lennon</td>
+            <td>Guitarra rítmica</td>
+        </tr>
+        <tr>
+            <td>Paul McCartney</td>
+            <td>Bajo</td>
+        </tr>
+        <tr>
+            <td>George Harrison</td>
+            <td>Guitarra principal</td>
+        </tr>
+        <tr>
+            <td>Ringo Starr</td>
+            <td>Batería</td>
+        </tr>
+    </table>
+
+    <!-- tabla 2
+    th encabezado/thead=tfoot-->
+    <table>
+        <caption style="width: 500px;">Plantillas NBA</caption>
+        <thead>
+            <tr>
+                <th>Equipo</th>
+                <th>Jugadores</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>
+                    <img width="170px" src="../imagenes/hornets.png">
+                </td>
+                <td>
+                    <ul>
+                        <li><a href="#">Kemba Walker</a></li>
+                        <li><a href="#">Tony Parker</a></li>
+                        <li><a href="#">Miles Bridges</a></li>
+                        <li><a href="#">Nicolas Batum</a></li>
+                        <li><a href="#">Frank Kaminski</a></li>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <td><img width="170px" src="../imagenes/lakers.png"></td>
+                <td>
+                    <ul>
+                        <li><a href="#">Lebron James</a></li>
+                        <li><a href="#">Lonzo Ball</a></li>
+                        <li><a href="#">Kyle Kuzma</a></li>
+                        <li><a href="#">Brandom Ingram</a></li>
+                        <li><a href="#">Rajon Rondom</a></li>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <td><img width="170px" src="../imagenes/knicks.png"></td>
+                <td>
+                    <ul>
+                        <li><a href="#">Dennis Smith</a></li>
+                        <li><a href="#">Kevin Knox</a></li>
+                        <li><a href="#">Frank Ntilikina</a></li>
+                        <li><a href="#">DeAndre Jordan</a></li>
+                        <li><a href="#">Allonzo Trier</a></li>
+                    </ul>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+</body>
+
+</html>

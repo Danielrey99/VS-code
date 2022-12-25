@@ -1,0 +1,67 @@
+body {
+    background-color: lightgray;
+    margin-left: 0px;
+    margin-top: 0px;
+}
+
+main,
+footer {
+    margin-left: 8px;
+}
+
+header {
+    text-align: center;
+    background-color: white;
+    padding: 2.5%;
+}
+
+section div p {
+    border: 1px solid black;
+    display: inline-block;
+    padding: 1px 5px;
+}
+
+section {
+    background-color: white;
+    padding: 0px 5px;
+    padding-bottom: 5px;
+}
+
+h2 {
+    padding-top: 20px;
+    text-align: center;
+}
+
+article {
+    width: 667px;
+}
+
+footer {
+    background-color: gray;
+    padding-left: 5px;
+    float: left;
+    width: 99%;
+}
+
+body div div main {
+    float: left;
+    width: 60%;
+    padding-bottom: 2%;
+}
+
+aside {
+    padding: 0px 20px;
+    float: left;
+    width: 35%;
+    padding-top: 0px;
+}
+
+aside section img {
+    display: block;
+    margin: auto;
+}
+
+aside section p {
+    padding: 5px 70px;
+}
+

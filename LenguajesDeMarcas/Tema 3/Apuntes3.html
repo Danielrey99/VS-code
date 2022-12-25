@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>FORMULARIO</h1>
+
+    <form name="formulario" method="post" action="#">
+        <fieldset>
+
+            <legend>Parte 1</legend>
+
+            <p>
+                <label for="txtnombre">Nombre :</label>
+                <input type="text" id="txtnombre" name="txtnombre" placeholder="Introduzca su nombre" required>
+            </p>
+
+            <p>
+                <label for="txtEdad">Edad :</label>
+                <input type="number" id="txtEdad" name="txtEdad" placeholder="Introduzca su edad" min="0" max="100">
+            </p>
+
+            <p>
+                <label for="txtDni">DNI :</label>
+                <input type="text" id="txtDni" name="txtDni" placeholder="Introduzca su DNI" maxlength="9">
+            </p>
+
+            <p>
+                <label for="txtpassword">Contraseña :</label>
+                <input type="password" id="txtpassword" name="txtpassword" placeholder="Introduzca su contraseña">
+            </p>
+
+            <p>
+                <label for="txtemail">Email :</label>
+                <input type="email" id="txtemail" name="txtemail" placeholder="Introduzca su email">
+            </p>
+
+            <p>
+                <label for="txaObservaciones">Observaciones :</label>
+                <textarea id="txaObservaciones" name="txaObservaciones"></textarea>
+            </p>
+        </fieldset>
+
+        <p>
+            <label for="rbAsignatura">Radio button</label> <br>
+            <input type="radio" name="asignatura" value="programacion" checked>Programacion<br>
+            <input type="radio" name="asignatura" value="bbdd"> Bases de datos<br>
+            <input type="radio" name="asignatura" value="entornos"> Entornos de desarrollo<br>
+        </p>
+
+        <p>
+            <label for="chAsignatura">Checkbox</label> <br>
+            <input type="checkbox" name="chasignatura" value="programacion">Programacion<br>
+            <input type="checkbox" name="chasignatura" value="bbdd"> Bases de datos<br>
+            <input type="checkbox" name="chasignatura" value="entornos"> Entornos de desarrollo<br>
+        </p>
+
+        <p>
+            Fecha de nacimiento
+            <input type="date" name="fechaNac"> <br>
+            Mes y año
+            <input type="month" name="mes">
+        </p>
+
+        <p>
+            <select>
+
+                <option selected disabled>Escoja una marca: </option>
+                <option value="volvo">Volvo</option>
+                <option value="saab">Saab</option>
+                <option value="mercedes">Mercedes</option>
+                <option value="audi">Audi</option>
+
+            </select>
+        </p>
+
+        <p>
+            <input type="submit" id="btnenviar" value="Enviar">
+            <input type="reset" id="btnreset" value="Eliminar">
+            <input type="button" id="btnVacio" value="Nada">
+            <button>Boton con imagen <img src="../Tema 1/imagenes/oso.jpg" width="100" height="100"> </button>
+        </p>
+
+    </form>
+
+    <h1>FORMULARIO 2</h1>
+
+    <form enctype="multipart/form-data" action="" method="GET">
+        <label for="txtfile">Subir fichero :</label>
+        <input type="file" id="txtfile" name="txtfile" accept=".pdf">
+
+    </form>
+
+</body>
+
+</html>

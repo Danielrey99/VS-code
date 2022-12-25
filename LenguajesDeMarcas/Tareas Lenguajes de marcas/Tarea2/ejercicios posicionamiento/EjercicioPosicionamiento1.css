@@ -1,0 +1,55 @@
+*{
+    box-sizing: border-box;
+}
+form{
+    width:50%;
+    margin:0 auto;
+    
+    
+    font-size:1.2rem;
+}
+.imgcontainer{
+    text-align: center;
+}
+img.avatar{
+    width:200px;
+    height: 200px;
+    border-radius: 50%;
+}
+
+.container{
+    width:80%;
+    margin:0 auto;
+}
+input[type="text"],input[type="password"]{
+    display:block;
+    padding:12px 8px;
+    margin:16px 0px;
+    width: 100%;
+    border:1px solid gainsboro;
+    border-radius:5px;
+}
+
+button[type="submit"]{
+    width:100%;
+    color:white;
+    padding:12px 8px;
+    background-color: #28a745;
+    border:1px solid #28a745;
+    margin:12px 0px;
+    cursor: pointer;
+}
+
+button.cancelbtn{
+    background-color: #f44336;
+    border:1px solid #f44336;
+    padding:12px 8px;
+    color: white;
+}
+span.psw{
+    display: inline-block;
+    margin-left:50%; /*No es la mejor solución , lo ideal sería float:right o display:flex*/
+}
+.cancelContainer{
+    padding: 1rem;
+}

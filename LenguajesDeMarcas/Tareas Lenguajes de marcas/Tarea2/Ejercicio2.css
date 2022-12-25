@@ -1,0 +1,31 @@
+div{
+    text-align: center;
+}
+
+#posicion1{
+    width: 1305px;
+    height: 100px;
+    border-width: 0px;
+}
+
+#posicion2{
+    width: 650px;
+    height: 650px;
+    border: 2px solid black;
+    float: left;
+    margin-left: 85px;
+}
+
+#posicion3{
+    width: 650px;
+    height: 650px;
+    border: 2px solid black;
+    float: left;
+}
+
+#posicion4{
+    width: 1350px;
+    height: 700px;
+    border-width: 0px;
+    text-align: center;
+}

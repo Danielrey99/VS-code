@@ -1,0 +1,10 @@
+@use "sass:color";
+
+@mixin color-box($color){
+    color: $color;
+    background-color: color.adjust($color, $alpha: -0.85);
+    border: 1px solid color.adjust($color, $lightness: -10%);
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border-radius: 0.25rem;
+}

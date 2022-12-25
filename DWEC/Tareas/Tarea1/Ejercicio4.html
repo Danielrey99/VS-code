@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Tarea 1. Ejercicio 4.</title>
+    <script src="01_objetos.js"></script>
+</head>
+
+<body>
+    <script>
+
+        document.write("<b>Películas publicadas antes del año 2000:</b><br>");
+
+        //usamos un bucle para recorer los objetos de movies
+        for (let x in movies) {
+            //seleccionamos los salidos antes del año 200
+            if (movies[x].releaseDate < 2000) {
+                document.write(x + "<br>");
+            }
+        }
+
+        //creamos un array vacio
+        var arrayActores = [];
+        //recoremos las peliculas y seleccionamos los actores
+        for (let x in movies) {
+            var obtenerActores = movies[x].actors;
+            //recorremos el array de actores y los añadimos al array anteriormente creado
+            for (let x in obtenerActores) {
+                arrayActores.push(obtenerActores[x]);
+            }
+        }
+        //Ordenamos el array
+        arrayActores.sort();
+        //recorremos el array ordenamos y eliminamos posiciones duplicadas
+        for (var i = 0; i < arrayActores.length; i++) {
+            if (arrayActores[i + 1] == arrayActores[i]) {
+                arrayActores.splice(i, 1);
+            }
+        }
+        document.write("<br><b>Lista de actores:</b><br>");
+        //mostramos el array
+        for (let x in arrayActores) {
+            document.write(arrayActores[x] + "<br>");
+        }
+
+        //Seleccionamos el valor (some array) del objeto,su posicion 2 del array yy el valor dentro de dicho array
+        var numero=myObject["some array"][2].number;  
+        document.write("<br><b>El valor de la propiedad number es: <b>"+numero);  
+
+    </script>
+
+</body>
+
+</html>

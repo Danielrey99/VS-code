@@ -1,0 +1,147 @@
+.cont{
+    border: 1px solid black;
+    position: relative;
+    width: 300px;
+    height: 400px;
+    margin: 0 auto;
+    top: 120px;
+}
+.ConjuntoImagenes{
+    position: fixed;
+    margin: 8.5px 6px;
+    
+}
+.cont:hover #imagen1{   
+    animation-name: moveCard1;
+    animation-duration: 7s;
+    animation-delay: 1s;
+    transform-origin: 0% 100%;
+    animation-fill-mode: forwards;  
+}
+.cont:hover #imagen2{   
+    animation-name: moveCard2;
+    animation-duration: 7s;
+    animation-delay: 1s;
+    transform-origin: 0% 100%;
+    animation-fill-mode: forwards;  
+}
+.cont:hover #imagen3{   
+    animation-name: moveCard3;
+    animation-duration: 7s;
+    animation-delay: 1s;
+    transform-origin: 0% 100%;
+    animation-fill-mode: forwards;  
+}
+.cont:hover #imagen4{   
+    animation-name: moveCard4;
+    animation-duration: 7s;
+    animation-delay: 1s;
+    transform-origin: 0% 100%;
+    animation-fill-mode: forwards;  
+}
+.cont:hover #imagen5{   
+    animation-name: moveCard5;
+    animation-duration: 7s;
+    animation-delay: 1s;
+    transform-origin: 0% 100%;
+    animation-fill-mode: forwards;  
+}
+.cont:hover #imagen6{   
+    animation-name: moveCard6;
+    animation-duration: 7s;
+    animation-delay: 1s;
+    transform-origin: 0% 100%;
+    animation-fill-mode: forwards;  
+}
+.cont:hover #imagen7{   
+    animation-name: moveCard7;
+    animation-duration: 7s;
+    animation-delay: 1s;
+    transform-origin: 0% 100%;
+    animation-fill-mode: forwards;  
+}
+@keyframes moveCard1{
+    0% {
+        transform: rotate(0deg);
+    }
+    50%{
+        transform: rotate(-45deg);
+    }
+    100% {
+        transform: rotate(-100deg);
+    }
+}
+@keyframes moveCard2{
+    0% {
+        transform: rotate(0deg);
+    }
+    50%{
+        transform: rotate(-45deg);
+    }
+    100% {
+        transform: rotate(-80deg);
+    }
+}
+@keyframes moveCard3{
+    0% {
+        transform: rotate(0deg);
+    }
+    50%{
+        transform: rotate(-45deg);
+    }
+    100% {
+        transform: rotate(-60deg);
+    }
+}
+@keyframes moveCard4{
+    0% {
+        transform: rotate(0deg);
+    }
+    50%{
+        transform: rotate(-45deg);
+    }
+    100% {
+        transform: rotate(-40deg);
+    }
+}
+@keyframes moveCard5{
+    0% {
+        transform: rotate(0deg);
+    }
+    50%{
+        transform: rotate(-45deg);
+    }
+    100% {
+        transform: rotate(-20deg);
+    }
+}
+@keyframes moveCard6{
+    0% {
+        transform: rotate(0deg);
+    }
+    50%{
+        transform: rotate(-45deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+}
+@keyframes moveCard7{
+    0% {
+        transform: rotate(0deg);
+    }
+    50%{
+        transform: rotate(-45deg);
+    }
+    100% {
+        transform: rotate(20deg);
+    }
+}
+img:hover{
+    border: 3px solid red;
+}
+img:active{
+    width: 388px;
+    height: 484px;
+    z-index: 1;
+}

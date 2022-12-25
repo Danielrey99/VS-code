@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Tarea 1. Ejercicio 3.</title>
+</head>
+
+<body>
+    <script>
+
+        //creamos la clase con los atributos
+        class Libro{
+            constructor(titulo,autor,anho,leido){
+                this._titulo=titulo;
+                this._autor=autor;
+                this._anho=anho;
+                this._leido=leido;
+            }
+
+            //metodo get el numero de años del libro desde su salida
+            get getAntiguedad(){
+                var fecha=new Date();
+                var anhosPasados=fecha.getFullYear()-this._anho;
+                return anhosPasados;
+            }
+
+        }
+
+        //creamos un parametro de ordenacion
+        function ordenarArray(a,b){
+            if(a._anho<b._anho){
+                 return -1;
+            }
+            if(a._anho>b._anho){
+                return 1;
+            }
+            return 0;
+        }
+
+        //creamos el array con los objetos libro
+        var miLibro3=new Libro("20 mil leguas de viaje submarino","Julio Verne",1869,false);
+        var miLibro2=new Libro("Asesinato en el Orient Express","Agatha Christie",1934,true);
+        var miLibro1=new Libro("Rebelión en la granja","george Orwell",1945,true);
+        var arrayLibros=[miLibro1,miLibro2,miLibro3];
+
+        //ordenamos el array segun el parametro creado
+        arrayLibros.sort(ordenarArray);
+
+        //recorremos el array y lo printamos por pantalla
+        for(i=0;i<arrayLibros.length;i++){
+            var leidoSiNo;
+            if(arrayLibros[i]._leido==true){
+                leidoSiNo="Ya lo he leído "
+            }else{
+                leidoSiNo="Todavía no lo he leído "
+            }
+            document.write(leidoSiNo+arrayLibros[i]._titulo+" escrito por "+arrayLibros[i]._autor+" ("+arrayLibros[i]._anho+") hace "+arrayLibros[i].getAntiguedad+"años<br>");
+        }
+
+    </script>
+
+</body>
+
+</html>

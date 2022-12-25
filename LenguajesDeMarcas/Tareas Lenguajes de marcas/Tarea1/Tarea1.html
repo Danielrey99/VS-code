@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tarea 1</title>
+    <link rel="stylesheet" type="text/css" href="Tarea1.css">
+</head>
+
+<body>
+    <h2>Ejercicio 1</h2>
+
+    <table class="Table12">
+        <caption>Super Oferta Viaje a Nueva Zelanda</caption>
+        <thead>
+            <tr>
+                <th rowspan="2" colspan="2"></th>
+                <th colspan="2"> <b>Hoteles 3 estrellas</b> </th>
+                <th rowspan="2"> <b>Hoteles 4 estrellas</b> </th>
+                <th rowspan="2"></th>
+            </tr>
+
+            <tr>
+                <td> <b>Solo alojamiento</b> </td>
+                <td> <b>Pension completa</b> </td>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td rowspan="2"><b>1 semana</b></td>
+                <td><b>Avion turista</b></td>
+                <td>700 USD</td>
+                <td>1000 USD</td>
+                <td rowspan="2">1500 USD</td>
+                <td rowspan="3">
+                    H<br>
+                    T<br>
+                    M<br>
+                    L<br>
+                    &nbsp;is<br>
+                    &nbsp;&nbsp;awe<br>
+                    &nbsp;&nbsp;&nbsp; some<br>
+                </td>
+            </tr>
+
+            <tr>
+                <td>Avion Preferente</td>
+                <td>780 USD</td>
+                <td>900 USD</td>
+            </tr>
+
+            <tr>
+                <td colspan="2">2 semanas</td>
+                <td>890 USD</td>
+                <td>900 USD</td>
+                <td>1200 USD</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="6">Tabla creada por Daniel</td>
+            </tr>
+        </tfoot>
+    </table>
+
+    <h2>Ejercicio 2</h2>
+
+    <table class="Table12">
+        <thead>
+            <tr>
+                <th>Mis 5 libros favoritos</th>
+                <th>Mi album favorito</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>
+                    <ol>
+                        <li>La conjura de los necios</li>
+                        <li>El medico</li>
+                        <li>El resplandor</li>
+                        <li>Sinuhe el egipcio</li>
+                        <li>Los pilares de la Tierra</li>
+                    </ol>
+                </td>
+
+                <td>
+                    <ul>
+                        <li>keane</li>
+                        <ul>
+                            <li>Hopes And fears</li>
+                            <ol>
+                                <li><span class="favorito">Somewhere</span> only we know</li>
+                                <li>Bend and break</li>
+                                <li>Everibody&#39;s <span class="favorito">changing</span> </li>
+                                <li>This is the last time</li>
+                            </ol>
+                        </ul>
+                    </ul>
+                </td>
+
+            </tr>
+        </tbody>
+    </table>
+
+    <h2>Ejercicio 3</h2>
+
+    <picture>
+        <source srcset="imagenes/img1.jpg" media="(min-width: 1200px)">
+        <source srcset="imagenes/img2.jpg" media="(min-width: 768px)">
+        <img src="imagenes/img3.jpg" style="width:auto;">
+    </picture>
+
+    <h2>Ejercicio 4</h2>
+
+    <header>
+        <div class="menu">
+            <a id="Home" href="#">Home</a>
+            <a id="About" href="menu/About.html">About</a>
+            <a id="Contact" href="menu/Contact.html">Contact</a>
+            <div class="menuSearch">
+                <form name="formularioMenu" method="post" action="#">
+                    <input type="text" placeholder="Search.." name="search">
+                    <button type="submit">Submit</button>
+                </form>
+            </div>
+        </div>
+    </header>
+
+    <h2>Ejercicio 5</h2>
+
+    <form name="formulario" method="post" action="#" id="formulario">
+        <p>
+            <label for="txtDni">DNI</label><br>
+            <input type="text" id="txtDni" class="txtBar" name="txtDni" placeholder="12345678A" maxlength="9" required>
+        </p>
+
+        <p>
+            <label for="txtNombre">Nombre</label><br>
+            <input type="text" id="txtNombre" class="txtBar" name="txtNombre" placeholder="Pedro" required>
+        </p>
+
+        <p>
+            <label for="txtApellidos">Apellidos</label><br>
+            <input type="text" id="txtApellidos" class="txtBar" name="txtApellidos" placeholder="Martinez Campos" required>
+        </p>
+
+        <p>
+            <label for="txtemail">Email</label><br>
+            <input type="email" id="txtemail" class="txtBar" name="txtemail" placeholder="pedromc@gmail.com" required>
+        </p>
+
+        <p>
+            <select>
+
+                <option selected disabled>Escoja una curso </option>
+                <option value="primero">1º ESO</option>
+                <option value="segundo">2º ESO</option>
+                <option value="tercero">3º ESO</option>
+                <option value="cuarto">4º ESO</option>
+                <option value="primerobach">1º Bachillerato</option>
+                <option value="segundobach">2º Bachillerato</option>
+
+            </select>
+        </p>
+
+        <p>
+            <label for="CantidadSolicitada">Cantidad Solicitada</label><br>
+            <input type="number" id="CantidadSolicitada" class="txtBar" name="CantidadSolicitada" placeholder="2000" min="0" max="2000" required>
+        </p>
+
+        <p>
+            <label for="rbSubscribirse">Desea suscribirse a nuestra newsletter?</label>
+            <input type="radio" name="Subscribirse" checked>Si
+            <input type="radio" name="Subscribirse">No
+        </p>
+
+        <p>
+            <input type="submit" id="btnenviar" value="Enviar">
+            <input type="reset" id="btnreset" value="Limpiar">
+        </p>
+
+    </form>
+
+    <h2>Ejercicio 6</h2>
+
+    <table class="Table3">
+        <thead>
+
+            <tr>
+                <th class="tdth2">  <b>Firstname</b> </th>
+                <th class="tdth2">  <b>Lastname</b> </th>
+                <th class="tdth2">  <b>Email</b> </th>
+            </tr>
+
+        </thead>
+
+        <tbody>
+
+            <tr>
+                <td class="tdth2">Default</td>
+                <td class="tdth2">Defaultson</td>
+                <td class="tdth2">def@somemail.com</td>
+            </tr>
+
+            <tr>
+                <td class="tdth2">Succes</td>
+                <td class="tdth2">Doe</td>
+                <td class="tdth2">john@somemail.com</td>
+            </tr>
+
+            <tr>
+                <td class="tdth2">Danger</td>
+                <td class="tdth2">Moe</td>
+                <td class="tdth2">marry@somemail.com</td>
+            </tr>
+
+            <tr>
+                <td class="tdth2">Info</td>
+                <td class="tdth2">Dooley</td>
+                <td class="tdth2">july@somemail.com</td>
+            </tr>
+
+            <tr>
+                <td class="tdth2">Warning</td>
+                <td class="tdth2">Refs</td>
+                <td class="tdth2">bo@somemail.com</td>
+            </tr>
+
+            <tr>
+                <td class="tdth2">Active</td>
+                <td class="tdth2">Activison</td>
+                <td class="tdth2">act@somemail.com</td>
+            </tr>
+
+        </tbody>
+    </table>
+
+</body>
+
+</html>

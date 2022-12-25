@@ -1,0 +1,41 @@
+.container{
+    width: 50%;
+    height: 350px;
+    margin:0 auto;
+    position: relative;/**/
+    text-align: justify;
+}
+.centerImage{
+    position:absolute;/**/
+    
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%) scale(0.85);
+}
+.centerImage img{
+    position: relative;
+    width: 580px;
+    object-fit: cover;
+}
+
+.left::before,
+.right::before{
+    content:"";
+    width:250px;
+    height:350px;
+}
+.left{
+    width:48%;
+    float:left;
+}
+.left::before{
+    float: right;
+}
+
+.right{
+    width:48%;
+    float:right;
+}
+.right::before{
+    float: left;
+}

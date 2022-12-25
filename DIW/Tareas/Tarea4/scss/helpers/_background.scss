@@ -1,0 +1,10 @@
+@use "sass:color";
+
+@each $key, $value in $color-map {
+    @for $i from 0 through 10 {
+        //.bg-primary-50, .bg-danger-90, ...
+        .bg-#{$key}-#{$i*10} {
+            background-color: color.adjust($value, $alpha: -(1-$i/10));
+        }
+    }
+}

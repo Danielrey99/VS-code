@@ -1,0 +1,16 @@
+git add --all
+git commit -m "mensaje"
+git push origin master
+
+
+(bajar cambios)
+git pull origin master
+
+(descargar repositorio)
+git clone -b NombreRama
+
+(cambiar de rama)
+git checkout NombreRama
+
+(ver estado)
+git status

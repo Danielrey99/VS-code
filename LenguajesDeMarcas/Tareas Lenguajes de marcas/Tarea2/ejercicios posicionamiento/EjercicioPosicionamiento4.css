@@ -1,0 +1,46 @@
+.bg-img{
+    background-image: url("../imagenes/monkey.jpg");
+
+    /* Ubicar bien la imagen */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    width: 1305px;
+    height: 650px;
+    /* Para posicionar el menú con respecto a este contenedor */
+    position: relative;
+
+}
+
+nav{
+    position: absolute;
+    top: 20px;
+    left: 15px;
+}
+
+nav ul{
+    list-style-type:none;
+    /* Eliminar espacio a la izquierda */
+    padding-left: 0px;
+    /* Hacer que el ul contenga a los elementos flotados */
+    overflow: hidden;
+    background-color: rgba(10, 40, 120, 0.5);
+
+}
+nav ul li{
+    padding:10px 14px;
+    float: left;
+}
+
+nav ul li a{
+    color: whitesmoke;
+    font-size: 1.2rem;
+    text-decoration: none;
+    display: block;
+}
+
+ul li:hover{
+    background-color: rgba(10, 40, 120, 1);
+    
+}

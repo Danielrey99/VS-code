@@ -1,0 +1,81 @@
+h1{
+    text-align: center;
+    background-color: #F7F7F7;
+    margin: 0px;
+}
+h2{
+    margin: 0px;
+}
+h3{
+    margin-bottom: 0px;
+}
+figure{
+    margin:0px;
+}
+figcaption p{
+    margin-top: 0px;
+    color:gray;
+}
+ul{
+    padding-left: 20px;
+    margin-top: 8px;
+}
+div#PiePagina{
+    text-align: center;
+    color: white;
+    background-color: #000;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+/*Color botones*/
+button#negro{
+    background-color: black;
+}
+button#azul{
+    background-color: blue;
+}
+button#rojo{
+    background-color: red;
+}
+button#amarillo{
+    background-color: yellow;
+}
+button#verde{
+    background-color: green;
+}
+button#marron{
+    background-color: brown;
+}
+
+/*Tamaño boton*/
+button.ColorCalzado{
+    padding: 10px;
+    display: inline-block;
+    margin-left: 5px;
+}
+
+/*Centrar Pagina*/
+body{
+    margin: 25px;
+}
+div.container{
+    border: 5px solid #000;
+    width: 800px;
+    margin: 0 auto;
+    position:relative;
+}
+/*Etiqueta Sale*/
+div.container::before{
+    content:"SALE";
+    background-color: red;
+    font-size: 20px;
+    font-family:Arial, Helvetica, sans-serif;
+    color: white;
+    padding: 5px 10px;
+    position: absolute;
+    top:-20px;
+    left: -40px;
+}
+
