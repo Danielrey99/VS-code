@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Parking</title>
+    <link rel="stylesheet" type="text/css" href="parking.css">
+    <script src="parking3.js"></script>
+</head>
+
+<body>
+    <h1 id="h1">Gestión de parking</h1>
+    <main>
+        <form method="POST">
+          Selecciona la plaza <br>
+          <select name="plazas" id="plazas">
+            <option value="PB1">Planta baja - plaza 1</option>
+            <option value="PB2">Planta baja - plaza 2</option>
+            <option value="S1">Sótano - plaza 1</option>
+            <option value="S2">Sótano - plaza 2</option>
+            <option value="S3">Sótano - plaza 3</option>
+            <option value="S4">Sótano - plaza 4</option>
+          </select><br><br>
+
+          <div id="detalleReserva">
+            <label>Nombre <input type="text" id="txtNombre"></label><br><br>
+            <label>Matricula <input type="text" id="txtMatricula" placeholder="Ej. 9328FWS"></label><br><br>
+            <label>Teléfono <input type="text" id="txtTelf" placeholder="Ej. +34686554433"></label><br><br>
+
+            Tipo de tarifa <br>
+            <label><input type="radio" name="tarifa" value="5" checked> Básica (5 min)</label><br>
+            <label><input type="radio" name="tarifa" value="30"> Avanzada (30 min)</label><br>
+            <label><input type="radio" name="tarifa" value="60"> Premium (1 h)</label><br><br>
+          </div>
+
+          <div id="ocupacion" hidden>Estará libre en <span id="minutosRestantes"></span> min</div>
+          <ul id="errores" hidden></ul>
+
+          <button type="submit" id="btnReservar">Reservar</button>
+        </form>
+    </main>
+
+</body>
+
+</html>

@@ -1,0 +1,433 @@
+section {
+    border: 3px solid black;
+    padding: 5px;
+    margin-bottom: 20px;
+}
+
+/*atributo*/
+.section1 p[title] {
+    background-color: lightpink;
+}
+
+.section1 p[title~=titulo1] {
+    border: 1px solid red;
+}
+
+.section1 p[title~=titulo2] {
+    border: 1px solid green;
+}
+
+/*pseudoclase*/
+.section1 a:active {
+    background-color: green;
+}
+
+.section1 a:nth-child(2) {
+    text-decoration: none;
+}
+
+/*pseudoelemento*/
+.section1 a::after {
+    content: "→";
+}
+
+.section1 a::before {
+    content: "/";
+}
+
+/*combinadores*/
+.section1 div {
+    border: 1px solid blue;
+}
+
+#div1 p {
+    color: red;
+}
+
+#div2>p {
+    color: red;
+}
+
+/*Posicionamiento Relativo/absoluto*/
+.container {
+    border: 2px solid black;
+    position: relative;
+    width: 400px;
+    height: 200px;
+}
+
+.contenido {
+    border: 1px solid black;
+    position: absolute;
+    top: 20px;
+    bottom: 20px;
+    left: 20px;
+    right: 20px;
+    background-color: #ffb000
+}
+
+/*float*/
+#Izq {
+    float: left;
+}
+
+#Der {
+    float: right;
+}
+
+.clearfix::after {
+    clear: both;
+    content: "";
+    display: block;
+}
+
+.clearfix p {
+    /*centro el texto del centro*/
+    display: flex;
+    justify-content: center;
+}
+
+/*flexbox*/
+#flexbox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    background-color: lightgray;
+    height: 150px;
+    border: 1px solid black;
+}
+
+#flexbox2 {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    background-color: lightgray;
+    height: 150px;
+    border: 1px solid black;
+}
+
+#flexbox p,
+#flexbox2 p {
+    border: 1px solid black;
+    background-color: lightgreen;
+}
+
+/*Grid*/
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 25px;
+    background-color: #2196F3;
+    padding: 10px;
+    margin-bottom: 50px;
+}
+
+.grid-item {
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+}
+
+.grid-container2 {
+    display: grid;
+    grid-template-columns: auto 100px auto;
+    column-gap: 50px;
+    row-gap: 10px;
+    background-color: #2196F3;
+    padding: 10px;
+}
+
+.grid-item2 {
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+}
+
+.grid-item2:nth-child(1) {
+    order: 7;
+}
+
+.grid-item2:nth-child(2) {
+    order: 8;
+}
+
+.grid-item2:nth-child(3) {
+    order: 9;
+}
+
+.grid-container3 {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    gap: 25px;
+    background-color: #2196F3;
+    padding: 10px;
+    margin-top: 50px;
+}
+
+.grid-item3 {
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+}
+
+.grid-item3:nth-child(1) {
+    grid-area: 2 / 1 / span 2 / span 3;
+    /*start row 2 column 1, and span 2 rows and 3 columns:*/
+}
+
+/*Grid template areas*/
+.grid-container4 {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    background-color: #2196F3;
+    padding: 10px;
+    margin-top: 50px;
+    grid-template-areas:
+        "x y y y"
+        "x center . w "
+        "x z z z";
+}
+
+.grid-item4 {
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+}
+
+/*Media querys*/
+@media screen and (max-width: 525px) {
+
+    /*Hasta 525*/
+    .responsive {
+        display: grid;
+        place-items: center;
+        background-color: darkred;
+        width: 75%;
+        height: 200px;
+    }
+}
+
+@media screen and (min-width: 525px) {
+
+    /*A partir de 525*/
+    .responsive {
+        display: grid;
+        place-items: center;
+        background-color: lightgreen;
+        width: 50%;
+        height: 100px;
+    }
+}
+
+@media screen and (max-width:700px) and (min-width:500px) {
+    .responsive2 {
+        display: grid;
+        place-items: center;
+        background-color: aqua;
+    }
+}
+
+@media not screen and (max-width:700px) and (min-width:500px) {
+    .responsive3 {
+        display: grid;
+        place-items: center;
+        background-color: aqua;
+    }
+}
+
+/*Transiciones*/
+.transicion {
+    /*Necesitan pseudoclases*/
+    background: tomato;
+    width: 200px;
+    height: 200px;
+    margin: 20px;
+    transition: background-color 2s, width 2s;
+}
+
+.transicion:hover {
+    background: steelblue;
+    width: 400px;
+}
+
+.transicion2 {
+    /*Necesitan pseudoclases*/
+    background: tomato;
+    width: 200px;
+    height: 200px;
+    margin: 20px;
+    border-radius: 50%;
+    transition: border-radius 5s ease 2s;
+}
+
+.transicion2:hover {
+    background: steelblue;
+    border-radius: 5%;
+}
+
+/*Animaciones*/
+.animacion {
+    background-color: red;
+    width: 200px;
+    height: 200px;
+    margin: 20px;
+    border-radius: 50%;
+
+    animation-name: cambiarColor;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    /*Se repite*/
+    animation-direction: alternate;
+    animation-delay: 2s;
+    animation-timing-function: ease-in;
+}
+
+.animacion:hover {
+    animation-play-state: paused;
+}
+
+@keyframes cambiarColor {
+    from {
+        background-color: crimson;
+    }
+
+    to {
+        background-color: teal;
+    }
+
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(0.5);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+
+    0% {
+        margin-left: 50px;
+    }
+
+    50% {
+        margin-left: 150px;
+    }
+
+    100% {
+        margin-left: 300px;
+    }
+}
+
+.animacion2 {
+    width: 200px;
+    height: 200px;
+    margin: 20px;
+    background-color: red;
+    /*Shorthand*/
+    animation: borde 5s 2s alternate infinite;
+}
+
+@keyframes borde {
+    from {
+        border: 1px solid black;
+        transform: translate(0);
+    }
+
+    to {
+        border: 5px solid green;
+        transform: translate(100%);
+    }
+}
+
+/*Reloj*/
+.section9{
+display: flex;
+justify-content: center;
+align-items: center;
+height: 500px;
+width: 500px;
+}
+.Reloj {
+    position: relative;
+
+    /*40% del ancho del padre -> 40% del ancho del viewport*/
+    width: 40%;
+    
+    aspect-ratio: 1;
+
+    border: 2px solid black;
+
+    /*Redondeo de las aristas de la caja -> un circulo */
+    border-radius: 50%;
+}
+
+.segs {
+    /*Colocamos la aguja en el centro de la esfera */
+    position: absolute;
+    left: 50%;
+    bottom: 50%;
+
+    width: 6px;
+    height: 49%;
+
+    border: 1px solid darkgrey;
+    background-color: darkgrey;
+
+    /*Si quereis que vaya más rápido basta reducir la duración de la animación*/
+    animation: rotate 60s linear infinite;
+}
+
+.mins {
+    position: absolute;
+    left: 50%;
+    bottom: 50%;
+
+    width: 8px;
+    height: 39%;
+
+    border: 1px solid dimgray;
+    background-color: dimgray;
+
+    animation: rotate 3600s linear infinite;
+}
+
+.horas {
+    position: absolute;
+    left: 50%;
+    bottom: 50%;
+
+    width: 10px;
+    height: 29%;
+
+    border: 1px solid lightslategrey;
+    background-color: lightslategrey;
+
+    animation: rotate 43200s linear infinite;
+}
+
+@keyframes rotate {
+    /*Tambien podeis usar 0% y 100%*/
+    from {
+        transform: rotateZ(0deg);
+        /*Queremos que las agujas roten sobre un punto en su borde inferior y centrado horizontalmente*/
+        transform-origin: bottom center;
+    }
+
+    to {
+        transform: rotateZ(360deg);
+        transform-origin: bottom center;
+    }
+}
+/*Bootstrap*/
